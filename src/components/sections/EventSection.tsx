@@ -1,0 +1,10 @@
+import ChurchRounded from '@mui/icons-material/ChurchRounded'
+import CelebrationRounded from '@mui/icons-material/CelebrationRounded'
+import MapRounded from '@mui/icons-material/MapRounded'
+import CalendarMonthRounded from '@mui/icons-material/CalendarMonthRounded'
+import { Button } from '@mui/material'
+import { motion } from 'framer-motion'
+import { Reveal } from '../common/Reveal'
+import { wedding } from '../../config/wedding.config'
+import { downloadCalendarEvent } from '../../utils/calendar'
+export function EventSection(){return <section className="event-editorial"><Reveal><p className="dark-index">02 / El gran día</p><h2>Donde comienza<br/><em>para siempre</em></h2><div className="event-flow"><div className="event-moment"><ChurchRounded/><span>{wedding.ceremony.time}</span><div><small>Ceremonia</small><h3>{wedding.ceremony.venue}</h3><p>{wedding.ceremony.address}<br/>{wedding.ceremony.province}</p></div></div><motion.div className="event-line" initial={{scaleY:0}} whileInView={{scaleY:1}} viewport={{once:true}} transition={{duration:1}}/><div className="event-moment"><CelebrationRounded/><span>{wedding.reception.time}</span><div><small>Recepción</small><h3>{wedding.reception.venue}</h3><p>{wedding.reception.address}</p></div></div></div><div className="map-mask"><iframe title="Mapa del lugar" loading="lazy" src={wedding.ceremony.mapEmbedUrl}/><span>Ubicación aproximada</span></div><div className="event-actions"><Button href={wedding.ceremony.mapsUrl} target="_blank" rel="noreferrer" startIcon={<MapRounded/>}>Cómo llegar</Button><Button onClick={downloadCalendarEvent} startIcon={<CalendarMonthRounded/>}>Guardar fecha</Button></div></Reveal></section>}
