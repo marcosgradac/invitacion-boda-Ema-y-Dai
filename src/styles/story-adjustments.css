@@ -5,10 +5,13 @@
   height: 220px;
   z-index: 5;
   opacity: 1;
+  box-sizing: border-box;
+  border: 1px solid #f5ecdc;
+  rotate: 3deg;
   object-fit: cover;
   object-position: center;
   mix-blend-mode: normal;
-  filter: drop-shadow(-8px 12px 16px #332b228c);
+  filter: drop-shadow(-7px 11px 15px #332b228c);
 }
 
 .immersive-gallery .frame-2 {
