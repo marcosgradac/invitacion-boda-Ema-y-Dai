@@ -14,6 +14,7 @@ import { Footer } from './components/sections/Footer'
 import { MusicButton } from './components/common/MusicButton'
 import './styles/luxury.css'
 import './styles/overrides.css'
+import './styles/story-adjustments.css'
 
 type Stage = 'loading' | 'envelope' | 'invitation'
 

@@ -3,7 +3,6 @@ import { useRef } from 'react'
 import botanical from '../../assets/florals/dondevalaflor.jpeg'
 import { wedding } from '../../config/wedding.config'
 import { Reveal } from '../common/Reveal'
-import '../../styles/story-adjustments.css'
 
 export function StorySection() {
   const ref = useRef<HTMLElement>(null)
