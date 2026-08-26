@@ -11,6 +11,13 @@
   filter: drop-shadow(-8px 12px 16px #332b228c);
 }
 
+.immersive-gallery .frame-2 {
+  top: 505px;
+  width: 44%;
+  height: 225px;
+  z-index: 4;
+}
+
 @media (max-width: 350px) {
   .story-branch {
     top: -22px;
