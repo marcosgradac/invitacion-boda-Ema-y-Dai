@@ -1,5 +1,8 @@
 .story-branch {
-  right: -25px;
+  width: 200px;
+  height: 360px;
+  right: -10px;
+  top: -100px;
   z-index: 2;
   object-fit: contain;
   object-position: center;
