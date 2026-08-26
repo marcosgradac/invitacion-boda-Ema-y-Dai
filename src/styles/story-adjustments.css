@@ -21,6 +21,10 @@
   z-index: 4;
 }
 
+.immersive-gallery .frame-2 img {
+  object-position: left center;
+}
+
 @media (max-width: 350px) {
   .story-branch {
     top: -22px;
