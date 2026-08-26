@@ -1,16 +1,22 @@
 import cinematicHero from '../assets/images/cinematic-hero.webp'
+import storyMain from '../assets/images/ema1-enhanced.webp'
+import storyDetail from '../assets/images/ema2-enhanced.webp'
+import galleryCenter from '../assets/images/day1-enhanced.webp'
+import galleryDetail from '../assets/images/day2-enhanced.webp'
+import galleryPortrait from '../assets/images/day3-enhanced.webp'
+import galleryStory from '../assets/images/day4-enhanced.webp'
+import galleryTopRight from '../assets/images/day5.jpeg'
 import type { WeddingConfig } from '../types/wedding'
 
 export const wedding: WeddingConfig = {
   couple: { names: 'Emanuel & Daiana', first: 'Emanuel', second: 'Daiana', initials: 'E & D' },
-  date: '2027-05-24T17:00:00-03:00', displayDate: '24 · 05 · 2027', shortDate: '24 MAY 2027',
+  date: '2026-09-12T13:00:00-03:00', displayDate: '12 · 09 · 2026', shortDate: '12 SEP 2026',
   intro: { loader: 'Una historia está por comenzar', envelope: 'Tenemos una invitación para vos' },
-  story: { copy: 'La vida nos encontró sin avisar y, desde entonces, elegimos caminar juntos. Hoy abrimos un nuevo capítulo y queremos que seas parte de él.', quote: 'Donde sea, pero con vos.', moments: [{ year: '2021', title: 'Nos encontramos' }, { year: '2024', title: 'Dijimos que sí' }, { year: '2027', title: 'Comienza para siempre' }] },
-  ceremony: { time: '17:00', venue: 'Finca Los Olivos', address: 'Dirección a confirmar', province: 'Córdoba', mapsUrl: 'https://maps.google.com/?q=Finca+Los+Olivos+Córdoba', mapEmbedUrl: 'https://www.google.com/maps?q=Finca+Los+Olivos+Córdoba&output=embed' },
-  reception: { time: '19:00', venue: 'Salón de la Finca', address: 'En el mismo predio' },
-  dressCode: { title: 'Elegante', note: 'Con cariño, reservamos el blanco para la novia.', colors: [{ name: 'Bosque', value: '#34473b' }, { name: 'Borgoña', value: '#672f39' }, { name: 'Arena', value: '#c4aa87' }, { name: 'Noche', value: '#242724' }, { name: 'Oliva', value: '#687259' }] },
-  gifts: { alias: 'EMANUELYDAIANA.2027', holder: 'Emanuel & Daiana', bank: 'Banco a confirmar' },
-  rsvpDeadline: '1 de mayo de 2027', musicUrl: '', contactPhone: '',
-  notes: [{ title: 'Llegá con tiempo', text: 'Te recomendamos llegar 20 minutos antes para que podamos comenzar juntos.' }, { title: 'Ceremonia desconectada', text: 'Durante la ceremonia, guardemos los celulares y vivamos el momento.' }, { title: 'Clima de campo', text: 'Habrá espacios al aire libre. Una prenda liviana de abrigo puede acompañarte.' }],
-  images: { hero: cinematicHero, gallery: [{ label: 'Retrato principal' }, { label: 'Un instante' }, { label: 'Nuestra historia' }, { label: 'Un detalle' }, { label: 'Para siempre' }] },
+  story: { copy: 'La vida nos encontró sin avisar y, desde entonces, elegimos caminar juntos. Hoy abrimos un nuevo capítulo y queremos que seas parte de él.', quote: 'Donde sea, pero con vos.', moments: [{ year: '2015', title: 'Nos encontramos' }, { year: '2015', title: 'Dijimos que sí' }, { year: '2026', title: 'Comienza para siempre' }] },
+  event: { dateLabel: '12 de septiembre', gatheringTime: '12:00 hs', ceremonyTime: '13:00 hs', mealTime: '13:30 hs', toastPrice: '$10.000 por persona', toastIncludes: 'Incluye vajilla.', childrenNote: 'Los menores de 10 años no pagan.' },
+  location: { name: 'Salón Orión', address: 'Caseros 461', province: 'Río Tercero, Córdoba', mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Sal%C3%B3n+Ori%C3%B3n%2C+Caseros+461%2C+R%C3%ADo+Tercero%2C+C%C3%B3rdoba', mapEmbedUrl: 'https://www.google.com/maps?q=Sal%C3%B3n+Ori%C3%B3n%2C+Caseros+461%2C+R%C3%ADo+Tercero%2C+C%C3%B3rdoba&output=embed' },
+  gifts: { alias: 'emanuelvanegas.ok', holder: 'Emanuel & Daiana', bank: 'Brubank' },
+  whatsapp: { number: '5493571550683', deadline: '5 de septiembre', message: '¡Hola! Quiero confirmar mi asistencia al casamiento de Ema y Dai. Mi nombre es: ' },
+  musicUrl: '',
+  images: { hero: cinematicHero, storyMain, storyDetail, gallery: [{ src: galleryPortrait, label: 'Retrato principal' }, { src: galleryTopRight, label: 'Un instante' }, { src: galleryStory, label: 'Nuestra historia' }, { src: galleryDetail, label: 'Un detalle' }, { src: galleryCenter, label: 'Para siempre' }] },
 }

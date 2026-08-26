@@ -5,12 +5,11 @@ import { LoadingScreen } from './components/intro/LoadingScreen'
 import { EnvelopeOpening } from './components/intro/EnvelopeOpening'
 import { HeroSection } from './components/sections/HeroSection'
 import { StorySection } from './components/sections/StorySection'
+import { EncounterInfoSection } from './components/sections/EncounterInfoSection'
 import { EventSection } from './components/sections/EventSection'
-import { DressCodeSection } from './components/sections/DressCodeSection'
-import { GuestInfoSection } from './components/sections/GuestInfoSection'
+import { WhatsAppSection } from './components/sections/WhatsAppSection'
 import { GiftsSection } from './components/sections/GiftsSection'
 import { GallerySection } from './components/sections/GallerySection'
-import { RsvpSection } from './components/sections/RsvpSection'
 import { Footer } from './components/sections/Footer'
 import { MusicButton } from './components/common/MusicButton'
 import './styles/luxury.css'
@@ -26,6 +25,6 @@ export default function App() {
   return <main className="app-shell"><AnimatePresence mode="wait">
     {stage==='loading'&&<LoadingScreen key="loading"/>}
     {stage==='envelope'&&<EnvelopeOpening key="envelope" onOpen={()=>setStage('invitation')}/>} 
-    {stage==='invitation'&&<motion.article key="invite" initial={{opacity:0,scale:1.12,filter:'blur(18px)'}} animate={{opacity:1,scale:1,filter:'blur(0px)'}} transition={{duration:1.05,ease:[.22,1,.36,1]}}><HeroSection/><StorySection/><EventSection/><GuestInfoSection/><DressCodeSection/><GallerySection/><GiftsSection onCopy={()=>setCopied(true)}/><RsvpSection/><Footer/><MusicButton/></motion.article>}
+    {stage==='invitation'&&<motion.article key="invite"><HeroSection/><StorySection/><GallerySection/><EncounterInfoSection/><EventSection/><GiftsSection onCopy={()=>setCopied(true)}/><WhatsAppSection/><Footer/><MusicButton/></motion.article>}
   </AnimatePresence><Snackbar open={copied} autoHideDuration={2200} onClose={()=>setCopied(false)}><Alert severity="success" variant="filled">Alias copiado</Alert></Snackbar></main>
 }
